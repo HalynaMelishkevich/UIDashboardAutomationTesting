@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/HalynaMelishkevich/UIDashboardAutomationTesting/issues"
   },
-  "homepage": "https://github.com/HalynaMelishkevich/UIDashboardAutomationTesting#readme"
+  "homepage": "https://github.com/HalynaMelishkevich/UIDashboardAutomationTesting#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.0.2",
+    "protractor": "^5.4.2"
+  }
 }
