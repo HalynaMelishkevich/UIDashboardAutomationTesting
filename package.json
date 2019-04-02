@@ -1,0 +1,19 @@
+{
+  "name": "uidashboardautomationtesting",
+  "version": "1.0.0",
+  "description": "Automation teseting framework for \"Now UI Dashboard Angular\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HalynaMelishkevich/UIDashboardAutomationTesting.git"
+  },
+  "author": "Halyna Melishkevych",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HalynaMelishkevich/UIDashboardAutomationTesting/issues"
+  },
+  "homepage": "https://github.com/HalynaMelishkevich/UIDashboardAutomationTesting#readme"
+}
