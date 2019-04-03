@@ -1,5 +1,5 @@
 import Page from './page';
-import MenuItem from '../pageComponents/menuItem';
+import MenuItem from '../pageComponents/supportingElements/menuItem';
 
 class Menu extends Page {
 
@@ -18,6 +18,7 @@ class Menu extends Page {
   async selectMenuItem(item) {
     await this.click(item);
   }
+
 }
 
 module.exports = new Menu();
