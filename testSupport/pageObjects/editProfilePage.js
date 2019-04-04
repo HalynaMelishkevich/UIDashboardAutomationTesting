@@ -1,7 +1,7 @@
-import Page from './page';
-import EditProfileComponent from '../pageComponents/editProfileComponent';
-import ProfileSummary from '../pageComponents/profileSummary';
-import Header from '../pageComponents/header';
+const Page = require('./page');
+const EditProfileComponent = require('../pageComponents/editProfileComponent');
+const ProfileSummary = require('../pageComponents/profileSummary');
+const Header = require('../pageComponents/header');
 
 class EditProfile extends Page {
   constructor() {

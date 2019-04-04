@@ -1,5 +1,5 @@
-import Page from './page';
-import MenuItem from '../pageComponents/supportingElements/menuItem';
+const Page = require('./page');
+const MenuItem = require('../pageComponents/supportingElements/menuItem');
 
 class Menu extends Page {
 

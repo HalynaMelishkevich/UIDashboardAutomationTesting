@@ -1,4 +1,4 @@
-import * as cssToXPath from 'css-to-xpath';
+const cssToXPath = require('css-to-xpath');
 
 class InputField {
 
