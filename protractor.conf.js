@@ -6,5 +6,6 @@ module.exports.config = {
   framework: 'mocha',
   mochaOpts: {
     timeout: 60000
-  }
+  },
+  allScriptsTimeout: 15000
 }

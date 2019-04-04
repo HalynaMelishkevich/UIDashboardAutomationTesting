@@ -1,11 +1,9 @@
-const Page = require('./page');
 const EditProfileComponent = require('../pageComponents/editProfileComponent');
 const ProfileSummary = require('../pageComponents/profileSummary');
 const Header = require('../pageComponents/header');
 
-class EditProfile extends Page {
+class EditProfile {
   constructor() {
-    super('Edit Profile Page');
     this._containerLocator = '.main-panel';
     this.editProfile = new EditProfileComponent(this._containerLocator);
     this.profileSummary = new ProfileSummary(this._containerLocator);

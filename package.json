@@ -4,6 +4,7 @@
   "description": "Automation teseting framework for \"Now UI Dashboard Angular\"",
   "main": "index.js",
   "scripts": {
+    "setup": "npm install && webdriver-manager clean && webdriver-manager update --standalone=false --gecko=false",
     "test": "mocha"
   },
   "repository": {

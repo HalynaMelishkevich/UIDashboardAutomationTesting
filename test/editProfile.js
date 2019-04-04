@@ -2,6 +2,7 @@ const Menu = require('../testSupport/pageObjects/menuPage');
 const EditProfile = require('../testSupport/pageObjects/editProfilePage');
 const User = require('../testSupport/builders/user');
 const moment = require("moment");
+import * as webdriverUtils from '../testSupport/webdriverUtils';
 
 describe('UI Dashboard Test Suite', () => {
 
@@ -20,10 +21,10 @@ describe('UI Dashboard Test Suite', () => {
             .withAboutMe('Lorem ipsum dolor sit amet')
             .build();
         const menu = new Menu();
-        await menu.open('https://demos.creative-tim.com/now-ui-dashboard-angular/');
-        await menu.userProfile.title.click();
+        await webdriverUtils.open('https://demos.creative-tim.com/now-ui-dashboard-angular/');
+        await click(menu.userProfile.title);
         const editProfile = new EditProfile();
-        await editProfile.editProfile.username.input.input();
+        await input(editProfile.editProfile.username.input, testUser.username);
     });
 
 });
