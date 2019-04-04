@@ -21,4 +21,4 @@ class Menu extends Page {
 
 }
 
-module.exports = new Menu();
+module.exports = Menu;

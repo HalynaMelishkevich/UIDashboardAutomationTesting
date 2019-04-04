@@ -20,7 +20,7 @@ describe('UI Dashboard Test Suite', () => {
             .withAboutMe('Lorem ipsum dolor sit amet')
             .build();
         const menu = new Menu();
-        await menu.get('');
+        await menu.open('https://demos.creative-tim.com/now-ui-dashboard-angular/');
         await menu.userProfile.title.click();
         const editProfile = new EditProfile();
         await editProfile.editProfile.username.input.input();

@@ -13,4 +13,4 @@ class EditProfile extends Page {
   }
 }
 
-module.exports = new EditProfile();
+module.exports = EditProfile;
