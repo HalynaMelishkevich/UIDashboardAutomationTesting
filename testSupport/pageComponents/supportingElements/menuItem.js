@@ -1,8 +1,8 @@
 class MenuItem {
-  constructor(locator) {
-    this.title = element(by.css(locator));
-    this.icon = element(by.css(`${locator} i`));
+  constructor (locator) {
+    this.title = element(by.css(locator))
+    this.icon = element(by.css(`${locator} i`))
   }
 }
 
-module.exports = MenuItem;
+module.exports = MenuItem

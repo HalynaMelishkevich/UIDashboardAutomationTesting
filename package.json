@@ -4,6 +4,8 @@
   "description": "Automation teseting framework for \"Now UI Dashboard Angular\"",
   "main": "index.js",
   "scripts": {
+    "standard": "standard",
+    "standard::fix": "standard --fix",
     "setup": "npm install && webdriver-manager clean && webdriver-manager update --standalone=false --gecko=false",
     "test": "mocha"
   },
@@ -24,6 +26,7 @@
     "css-to-xpath": "^0.1.0",
     "mocha": "^6.0.2",
     "moment": "^2.24.0",
-    "protractor": "^5.4.2"
+    "protractor": "^5.4.2",
+    "standard": "^12.0.1"
   }
 }

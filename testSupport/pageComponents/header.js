@@ -1,7 +1,7 @@
 class Header {
-    constructor(parentLocator) {
-        this._containerLocator = `${parentLocator} .navbar`;
-    }
+  constructor (parentLocator) {
+    this._containerLocator = `${parentLocator} .navbar`
+  }
 }
 
-module.exports = Header;
+module.exports = Header
