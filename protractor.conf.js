@@ -7,5 +7,5 @@ module.exports.config = {
   mochaOpts: {
     timeout: 60000
   },
-  allScriptsTimeout: 15000
+  allScriptsTimeout: 10000
 }

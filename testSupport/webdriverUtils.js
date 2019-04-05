@@ -19,7 +19,14 @@ module.exports = {
 
   async input (element, data) {
     await browser.wait(EC.visibilityOf(element))
+    await element.clear()
     await element.sendKeys(data)
+  },
+
+  async getInputText (element) {
+    await browser.wait(EC.visibilityOf(element))
+    const text = await element.getAttribute('value')
+    return text
   }
 
 }

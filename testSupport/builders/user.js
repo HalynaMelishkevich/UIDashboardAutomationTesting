@@ -1,15 +1,15 @@
 class User {
   constructor (build) {
-    this.companyName = build.companyName
-    this.username = build.username
-    this.email = build.email
-    this.firstName = build.firstName
-    this.lastName = build.lastName
-    this.address = build.address
-    this.city = build.city
-    this.country = build.country
-    this.postCode = build.postCode
-    this.abountMe = build.aboutMe
+    build.companyName ? this.companyName = build.companyName : null
+    build.username ? this.username = build.username : null
+    build.email ? this.email = build.email : null
+    build.firstName ? this.firstName = build.firstName : null
+    build.lastName ? this.lastName = build.lastName : null
+    build.address ? this.address = build.address : null
+    build.city ? this.city = build.city : null
+    build.country ? this.country = build.country : null
+    build.postCode ? this.postCode = build.postCode : null
+    build.aboutMe ? this.aboutMe = build.aboutMe : null
   }
 
   static get Builder () {
