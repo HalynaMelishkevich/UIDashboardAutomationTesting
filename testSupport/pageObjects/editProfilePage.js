@@ -1,8 +1,12 @@
 const EditProfileComponent = require('../pageComponents/editProfileComponent')
 const ProfileSummary = require('../pageComponents/profileSummary')
 const Header = require('../pageComponents/header')
+const Footer = require('../pageComponents/footer')
 const User = require('../builders/user')
 const webdriverUtils = require('../webdriverUtils')
+const log4js = require('log4js')
+const logger = log4js.getLogger()
+logger.level = 'info'
 
 class EditProfile {
   constructor () {
@@ -10,6 +14,7 @@ class EditProfile {
     this.editProfile = new EditProfileComponent(this._containerLocator)
     this.profileSummary = new ProfileSummary(this._containerLocator)
     this.header = new Header(this._containerLocator)
+    this.footer = new Footer(this._containerLocator)
   }
 
   async setUserData (user) {
@@ -30,6 +35,7 @@ class EditProfile {
         await webdriverUtils.input(key, value)
       }
     }
+    logger.info('User data were successfully set.')
   }
 
   async getUserData () {
