@@ -19,7 +19,6 @@ Javascrpit
 
 ## How to run this project
 ```
-npm install
 npm run setup
 npm run test
 ```
