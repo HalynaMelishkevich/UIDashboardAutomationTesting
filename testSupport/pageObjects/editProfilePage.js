@@ -39,17 +39,17 @@ class EditProfile {
   }
 
   async getUserData () {
-    let user = {}
-    user.username = await webdriverUtils.getInputText(this.editProfile.username.input)
-    user.email = await webdriverUtils.getInputText(this.editProfile.emailAddress.input)
-    user.firstName = await webdriverUtils.getInputText(this.editProfile.firstName.input)
-    user.lastName = await webdriverUtils.getInputText(this.editProfile.lastName.input)
-    user.address = await webdriverUtils.getInputText(this.editProfile.address.input)
-    user.city = await webdriverUtils.getInputText(this.editProfile.city.input)
-    user.country = await webdriverUtils.getInputText(this.editProfile.country.input)
-    user.postCode = await webdriverUtils.getInputText(this.editProfile.postalCode.input)
-    user.aboutMe = await webdriverUtils.getInputText(this.editProfile.aboutMe.input)
-    return user
+    return {
+      username: await webdriverUtils.getInputText(this.editProfile.username.input),
+      email: await webdriverUtils.getInputText(this.editProfile.emailAddress.input),
+      firstName: await webdriverUtils.getInputText(this.editProfile.firstName.input),
+      lastName: await webdriverUtils.getInputText(this.editProfile.lastName.input),
+      address: await webdriverUtils.getInputText(this.editProfile.address.input),
+      city: await webdriverUtils.getInputText(this.editProfile.city.input),
+      country: await webdriverUtils.getInputText(this.editProfile.country.input),
+      postCode: await webdriverUtils.getInputText(this.editProfile.postalCode.input),
+      aboutMe: await webdriverUtils.getInputText(this.editProfile.aboutMe.input)
+    }
   }
 }
 

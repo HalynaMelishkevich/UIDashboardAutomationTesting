@@ -7,5 +7,8 @@ module.exports.config = {
   mochaOpts: {
     timeout: 60000
   },
-  allScriptsTimeout: 10000
+  allScriptsTimeout: 10000,
+  onPrepare: async () => {
+    await browser.driver.manage().window().maximize()
+  }
 }
